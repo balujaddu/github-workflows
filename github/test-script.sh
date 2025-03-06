@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git pull origin/maser https://github.com/balujaddu/devops-notes-app.git
+git pull origin maser https://github.com/balujaddu/devops-notes-app.git
 echo "Cloning repo completed"
 
 git checkout -b test-abc && git push origin test-abc
