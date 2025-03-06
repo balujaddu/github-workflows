@@ -21,3 +21,7 @@ echo "Pull reqiest raised"
 
 git merge --no-ff origin/text-xyz https://github.com/balujaddu/devops-notes-app.git origin/test-abc
 echo "PR merged"
+
+cd ..
+rm -rf devops-notes-app
+rm -rf github-worflows
