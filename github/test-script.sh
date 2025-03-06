@@ -7,7 +7,7 @@ git checkout -b test-abc && git push origin test-abc
 git checkout -b test-xyz && git push origin test-xyz
 echo "Created new branches"
 
-cd source-code
+cd github-workflows
 git checkout test-abc
 touch abc.txt
 git add .
