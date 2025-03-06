@@ -15,7 +15,7 @@ cd devops-notes-app
 
 # Create two branches
 git checkout -b $BRANCH1
-git checkout -b $BRANCH2
+git checkout -b $BRANCH2 && git push origin $BRANCH2
 
 # Add a file and commit it to the first branch
 git checkout $BRANCH1
@@ -26,7 +26,8 @@ git push origin $BRANCH1
 
 # Raise a PR between the created branches
 # Note: This step requires GitHub CLI (gh) to be installed and authenticated
-gh pr create --base $BRANCH2 --head $BRANCH1 --title "$PR_TITLE" --body "$PR_BODY"
+#gh pr create --base $BRANCH2 --head $BRANCH1 --title "$PR_TITLE" --body "$PR_BODY"
+git request-pull $REPO_URL $BRANCH2
 
 # Merge the PR
 gh pr merge --auto --squash
