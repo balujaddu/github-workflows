@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Variables
-REPO_URL="https://github.com/balujaddu/devops-notes-app.git"
+TOKEN="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"
+REPO_URL="https://$TOKEN@github.com/balujaddu/devops-notes-app.git"
 BRANCH1="feature-branch1"
 BRANCH2="feature-branch2"
 FILE_NAME="newfile.txt"
