@@ -7,6 +7,7 @@ echo "Cloning repo completed"
 git checkout -b test-abc && git push origin test-abc
 git checkout -b test-xyz && git push origin test-xyz
 echo "Created new branches"
+pwd
 
 cd devops-notes-app
 git checkout test-abc
