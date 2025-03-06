@@ -1,7 +1,7 @@
 #!/bin/bash
 
 git remote add origin https://github.com/balujaddu/github-workflows.git
-git pull origin maser:master
+git pull origin master:master
 echo "Cloning repo completed"
 
 git checkout -b test-abc && git push origin test-abc
