@@ -8,6 +8,9 @@ pipeline{
             }
         }
         stage('cleanup-workspace'){
+            steps{
                 deleteDir()
+            }
+        }
     }
 }
