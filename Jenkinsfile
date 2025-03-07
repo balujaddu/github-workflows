@@ -7,5 +7,7 @@ pipeline{
                 sh './github/test-script-2.sh'
             }
         }
+        stage('cleanup-workspace'){
+                deleteDir()
     }
 }
