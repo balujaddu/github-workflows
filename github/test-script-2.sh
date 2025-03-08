@@ -32,7 +32,7 @@ git push origin $BRANCH2
 # Raise a PR between the created branches
 # Note: This step requires GitHub CLI (gh) to be installed and authenticated
 #gh pr create --base $BRANCH2 --head $BRANCH1 --title "$PR_TITLE" --body "$PR_BODY"
-git request-pull $BRANCH1 $REPO_URL $BRANCH2
+git request-pull v1.0 $REPO_URL HEAD
 
 # Merge the PR
 git checkout $BRANCH1
