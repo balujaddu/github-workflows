@@ -19,6 +19,9 @@ echo "commited to the branch"
 git request-pull test-xyz https://github.com/balujaddu/devops-notes-app.git test-abc
 echo "Pull reqiest raised"
 
+git push origin test-abc
+echo "Pushed to the branch"
+
 git fetch origin
 git checkout test-xyz
 git merge --no-ff origin/text-xyz https://github.com/balujaddu/devops-notes-app.git origin/test-abc
