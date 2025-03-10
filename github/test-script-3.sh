@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set the repository URL
-REPO_URL="https://github.com/balujaddu/devops-notes-app.git"
+REPO_URL="git@github.com:balujaddu/devops-notes-app.git"
 
 # Clone the repository
 git clone $REPO_URL
