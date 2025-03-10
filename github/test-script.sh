@@ -4,6 +4,8 @@ git remote set-url origin https://github.com/balujaddu/devops-notes-app.git
 git pull origin master
 echo "Cloning repo completed"
 
+ls -lrt
+
 cd devops-notes-app
 git checkout -b test-abc
 git checkout -b test-xyz
