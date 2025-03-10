@@ -1,14 +1,15 @@
 #!/bin/bash
 
 # Set the repository URL
-REPO_URL="git@github.com:balujaddu/devops-notes-app.git"
+REPO_URL="https://github.com/balujaddu/devops-notes-app.git"
+TOKEN="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"
 
-# Clone the repository
-git clone $REPO_URL
+# Clone the repository with authentication
+git clone https://$TOKEN@github.com/balujaddu/devops-notes-app.git
 cd devops-notes-app
 
-# Set the origin URL
-git remote set-url origin $REPO_URL
+# Set the origin URL with authentication
+git remote set-url origin https://$TOKEN@github.com/balujaddu/devops-notes-app.git
 
 # Pull the master branch
 git checkout master
