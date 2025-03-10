@@ -1,7 +1,7 @@
 #!/bin/bash
 
-git remote add origin https://github.com/balujaddu/devops-notes-app.git
-git pull origin master:master
+git remote set-url origin https://github.com/balujaddu/devops-notes-app.git
+git pull origin master
 echo "Cloning repo completed"
 
 cd devops-notes-app
@@ -16,9 +16,11 @@ git commit -m "adding a file"
 git push origin test-abc
 echo "commited to the branch"
 
-git request-pull origin/test-xyz https://github.com/balujaddu/devops-notes-app.git origin/test-abc
+git request-pull test-xyz https://github.com/balujaddu/devops-notes-app.git test-abc
 echo "Pull reqiest raised"
 
+git fetch origin
+git checkout test-xyz
 git merge --no-ff origin/text-xyz https://github.com/balujaddu/devops-notes-app.git origin/test-abc
 echo "PR merged"
 
