@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git remote set-url origin https://github.com/balujaddu/devops-notes-app.git
+git remote set-url origin https://${svcidgit}@github.com/balujaddu/devops-notes-app.git
 git pull origin master
 echo "Cloning repo completed"
 
