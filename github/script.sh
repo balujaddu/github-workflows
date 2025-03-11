@@ -2,7 +2,7 @@ git remote set-url origin https://github.com/balujaddu/devops-notes-app.git
 git pull origin master
 echo "Cloning repo completed"
 
-cd devops-notes-app
+sudo cd devops-notes-app
 git remote -v
 git fetch origin
 git checkout -b test-abc origin/master
@@ -11,7 +11,7 @@ git fetch origin
 git checkout -b test-xyz origin/test-abc
 echo "Created new branches"
 
-touch xyz.txt
+sudo touch xyz.txt
 git add .
 git commit -m "adding a file"
 git push origin test-xyz
