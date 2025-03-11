@@ -24,6 +24,10 @@ git checkout test-abc
 git merge --no-ff origin/test-abc
 echo "PR merged"
 
+git push origin test-abc
+git push origin test-xyz
+echo "Pushed to branches"
+
 cd ..
 rm -rf devops-notes-app
 rm -rf github-worflows
